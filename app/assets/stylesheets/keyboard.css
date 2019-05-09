@@ -6,11 +6,14 @@ html {
 }
 
 #kcontainer {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
 	align-items: center;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 }
 
 .keyboard_row {
@@ -34,6 +37,9 @@ html {
 	white-space: nowrap;
 	flex: 1;
 	height: auto;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 .key:active {
